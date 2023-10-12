@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" async></script>
+</head>
+
+<body>
+    <section class="products w-full md:w-[80%] flex flex-col md:flex-row items-center gap-6  justify-center mx-auto my-6 px-2">
+
+        <div class="product">
+            <h1 class="product-name text-center text-2xl font-semibold">Apple</h1>
+            <img src="https://images.pexels.com/photos/206959/pexels-photo-206959.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                class="w-full max-w-md flex mx-auto rounded-xl" alt="Apple">
+            <div class="flex items-center justify-between max-w-md mx-auto mt-4">
+                <p class="price text-2xl font-bold">$4.00</p>
+                <button class="add-to-cart bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 add-to-cart">Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product">
+            <h1 class="product-name text-center text-2xl font-semibold">Orange</h1>
+            <img src="https://images.pexels.com/photos/2090902/pexels-photo-2090902.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                class="w-full max-w-md flex mx-auto rounded-xl" alt="Orange">
+            <div class="flex items-center justify-between max-w-md mx-auto mt-4">
+                <p class="price text-2xl font-bold">$6.00</p>
+                <button class="add-to-cart bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 add-to-cart">Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product">
+            <h1 class="product-name text-center text-2xl font-semibold">Mango</h1>
+            <img src="https://images.pexels.com/photos/5875696/pexels-photo-5875696.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                class="w-full max-w-md flex mx-auto rounded-xl" alt="Mango">
+            <div class="flex items-center justify-between max-w-md mx-auto mt-4">
+                <p class="price text-2xl font-bold">$20.00</p>
+                <button class="add-to-cart bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 add-to-cart">Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <section class="cart w-full md:w-[80%] mx-auto px-4">
+        <h1 class="text-center text-6xl text-black/80">Cart</h1>
+
+        <div class="flex w-full md:w-[70%] mx-auto text-2xl p-2 items-center justify-between">
+            <p class="border-b-2 border-black">ITEM</p>
+            <p class="border-b-2 border-black">PRICE</p>
+            <p class="border-b-2 border-black">QUANTITY</p>
+        </div>
+
+        <main class="product-cart">
+        <!-- <div class="product-item w-full my-4 border-b-2 border-black/50 pb-4">
+
+            <div class="item w-full md:w-[70%] mx-auto flex justify-between items-center flex-wrap">
+                <div class="img-title flex justify-between items-center gap-6 flex-col md:flex-row">
+                    <img src="https://images.pexels.com/photos/206959/pexels-photo-206959.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        class="w-[100px]" alt="">
+                    <p class="cart-name text-2xl">Apple</p>
+                </div>
+                <p class="cart-price text-2xl">$4.00</p>
+                <div class="cart-quantity text-2xl flex flex-row gap-2">
+                    <input type="number" placeholder="Quantity" value="1" class="w-full focus:outline-none border-2 border-black/50 py-1 px-2 rounded-lg quantity">
+                    <button class="bg-red-500 text-md px-2 py-1 text-white rounded-lg hover:bg-red-600 remove-cart">Remove</button>
+                </div>
+            </div>
+        
+        </div> -->
+
+        </main>
+        <div class="w-full flex justify-end my-4 clear-cart">
+            <button class="bg-red-500 text-white px-4 py-2 text-xl font-medium rounded-lg hover:bg-red-600">Clear Cart</button>
+        </div>
+        <div class="total text-right text-4xl font-bold tracking-wide">Total: <span></span></div>
+    </section>
+</body>
+
+</html>
